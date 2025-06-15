@@ -1,10 +1,19 @@
 body {
   margin: 0;
   font-family: 'Pixelify Sans', cursive;
-  background: linear-gradient(to top, #ffe8f3, #ffffff);
+  background: url('assets/love-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #333;
   text-align: center;
   overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85); /* or use rgba(0, 0, 0, 0.3) for a dark overlay */
+  z-index: -1;
 }
 
 header .top-bar {
